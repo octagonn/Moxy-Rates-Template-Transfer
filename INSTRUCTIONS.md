@@ -740,16 +740,31 @@ def identify_column_purpose(column_name, sample_values):
     
     # Check for exact matches in common column names
     column_patterns = {
-        'coverage': ['coverage', 'coveragetype', 'cover', 'protection', 'plan'],
+        'companycode': ['companycode', 'company_code', 'company', 'code'],
         'term': ['term', 'termmonths', 'termlength', 'months', 'duration'],
         'miles': ['miles', 'mileage', 'odometer', 'distance', 'milelimit'],
-        'frommiles': ['frommiles', 'startmiles', 'minmiles', 'lowmiles'],
-        'tomiles': ['tomiles', 'endmiles', 'maxmiles', 'highmiles'],
-        'minyear': ['minyear', 'yearmin', 'startyear', 'fromyear', 'vehicleyearmin'],
-        'maxyears': ['maxyears', 'yearmax', 'maxyear', 'toyear', 'vehicleyearmax'],
+        'frommiles': ['frommiles', 'from_miles', 'startmiles', 'minmiles', 'lowmiles'],
+        'tomiles': ['tomiles', 'to_miles', 'endmiles', 'maxmiles', 'highmiles'],
+        'coverage': ['coverage', 'coveragetype', 'cover', 'protection', 'plan'],
+        'state': ['state', 'location', 'region', 'territory'],
         'class': ['class', 'vehicleclass', 'category', 'tier', 'classification'],
-        'ratecost': ['ratecost', 'rate', 'cost', 'price', 'premium', 'dealer', 'dealercost'],
-        'deductible': ['deductible', 'deduct', 'ded', 'deductibleamount']
+        'plandeduct': ['plandeduct', 'plan_deduct', 'plandeductible', 'plan_deductible'],
+        'deduct0': ['deduct0', 'deductible0', 'deductible_0'],
+        'deduct50': ['deduct50', 'deductible50', 'deductible_50'],
+        'deduct100': ['deduct100', 'deductible100', 'deductible_100'],
+        'deduct200': ['deduct200', 'deductible200', 'deductible_200'],
+        'deduct250': ['deduct250', 'deductible250', 'deductible_250'],
+        'deduct500': ['deduct500', 'deductible500', 'deductible_500'],
+        'markup': ['markup', 'mark_up', 'margin', 'profit'],
+        'new/used': ['new/used', 'newused', 'condition', 'vehicle_condition'],
+        'maxyears': ['maxyears', 'max_years', 'yearmax', 'endyear', 'toyear'],
+        'surchargecode': ['surchargecode', 'surcharge_code', 'surcharge'],
+        'plancode': ['plancode', 'plan_code', 'plan'],
+        'ratecardcode': ['ratecardcode', 'rate_card_code', 'ratecode'],
+        'classlistcode': ['classlistcode', 'class_list_code', 'classlist'],
+        'minyear': ['minyear', 'min_year', 'yearmin', 'startyear', 'fromyear'],
+        'incsccode': ['incsccode', 'inc_sc_code', 'incsc_code'],
+        'incscamt': ['incscamt', 'inc_sc_amt', 'incsc_amt']
     }
     
     # Check for pattern matches

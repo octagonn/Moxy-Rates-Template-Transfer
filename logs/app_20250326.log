@@ -1,0 +1,7 @@
+Log file created at 2025-03-26 16:34:05
+2025-03-26 16:34:05,056 - root - INFO - Logging configured successfully
+2025-03-26 16:34:05,056 - root - DEBUG - Debug logging is enabled
+2025-03-26 16:34:05,056 - root - INFO - FileAnalyzer initialized
+2025-03-26 16:34:05,057 - root - INFO - MappingSystem initialized
+2025-03-26 16:34:05,057 - root - INFO - DataProcessor initialized
+2025-03-26 16:34:05,078 - root - INFO - Application initialized

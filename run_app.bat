@@ -21,9 +21,9 @@ exit /b 1
 :PYTHON_FOUND
 echo Found Python: %PYTHON_CMD%
 
-REM Check for main.pyw
-IF NOT EXIST main.pyw (
-    echo Error: main.pyw not found.
+REM Check for main.py
+IF NOT EXIST main.py (
+    echo Error: main.py not found.
     echo Please make sure you're running this batch file from the repository root directory.
     pause
     exit /b 1
@@ -49,16 +49,11 @@ IF ERRORLEVEL 1 (
     )
 )
 
-REM Run the application
-echo Starting application...
-IF "%PYTHON_CMD%"=="python" (
-    start /b pythonw main.pyw
-) ELSE (
-    start /b %PYTHON_CMD% main.pyw
-)
+REM Run the application directly with python, not pythonw
+echo Starting application with full console output...
+%PYTHON_CMD% main.py
 
 REM Check for immediate errors
-timeout /t 1 /nobreak >nul
 IF ERRORLEVEL 1 (
     echo Error running application.
     echo Please check the logs for more information.

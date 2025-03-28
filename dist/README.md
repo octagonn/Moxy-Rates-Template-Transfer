@@ -19,22 +19,25 @@ A Windows application that automates the process of transferring data from Adjus
 2. Run the installer and follow the on-screen instructions
 3. Launch the application from the Start menu or desktop shortcut
 
-### Option 2: Running from Source
+### Option 2: Running from Source (Windows)
 
-1. Make sure you have Python 3.9+ installed
-2. Clone this repository:
-   ```
-   git clone https://github.com/your-username/moxy-rates-template-transfer.git
-   cd moxy-rates-template-transfer
-   ```
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Run the application:
-   ```
-   python main.py
-   ```
+1. Make sure you have Python 3.9+ installed with "Add Python to PATH" enabled during installation
+2. Clone or download this repository
+3. **Simple setup:** 
+   - Double-click `setup.bat` to install all dependencies automatically
+   - After setup completes, run `run_app.bat` to start the application
+
+4. **Manual setup:** If the simple setup doesn't work
+   - Open Command Prompt as administrator
+   - Navigate to the repository folder: `cd path\to\moxy-rates-template-transfer`
+   - Install the required dependencies: `python -m pip install -r requirements.txt`
+   - Run the application: `pythonw main.pyw` or use `run_app.bat`
+
+### Troubleshooting Setup
+
+- **Python not found**: Make sure Python is installed and added to your PATH
+- **pip not recognized**: Try using `python -m pip` instead of just `pip`
+- **Import errors**: Make sure all dependencies are installed with `python -m pip install -r requirements.txt`
 
 ## Usage
 
