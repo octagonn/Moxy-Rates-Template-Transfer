@@ -18,7 +18,10 @@
   <a target="code" href="///C:/Users/octav/OneDrive/Desktop/GitHub/repos/Moxy-Rates-Template-Transfer/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
-    <a href="#_collections_abc">_collections_abc</a>
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#abc">abc</a>
  &#8226;   <a href="#codecs">codecs</a>
@@ -164,6 +167,7 @@ imports:
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pandas">pandas</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#pyi_rth__tkinter.py">pyi_rth__tkinter.py</a>
  &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
@@ -182,16 +186,19 @@ imports:
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#tkinter">tkinter</a>
  &#8226;   <a href="#tkinter.filedialog">tkinter.filedialog</a>
  &#8226;   <a href="#tkinter.messagebox">tkinter.messagebox</a>
+ &#8226;   <a href="#tkinter.simpledialog">tkinter.simpledialog</a>
  &#8226;   <a href="#tkinter.ttk">tkinter.ttk</a>
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
 
   </div>
 
@@ -334,7 +341,16 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'collections.abc'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#_pyrepl.readline">_pyrepl.readline</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#_pyrepl.readline">_pyrepl.readline</a>
  &#8226;   <a href="#_pyrepl.types">_pyrepl.types</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
  &#8226;   <a href="#asyncio.coroutines">asyncio.coroutines</a>
@@ -1055,10 +1071,2216 @@ imported by:
 
 <div class="node">
   <a name="PIL"></a>
-  <a target="code" href="" type="text/plain"><tt>PIL</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/__init__.py" type="text/plain"><tt>PIL</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.ImageWin">PIL.ImageWin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#PIL._imagingcms">PIL._imagingcms</a>
+ &#8226;   <a href="#PIL._imagingmath">PIL._imagingmath</a>
+ &#8226;   <a href="#PIL._imagingtk">PIL._imagingtk</a>
+ &#8226;   <a href="#PIL._version">PIL._version</a>
+ &#8226;   <a href="#PIL._webp">PIL._webp</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
 imported by:
-    <a href="#openpyxl.drawing.image">openpyxl.drawing.image</a>
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.ImageWin">PIL.ImageWin</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegPresets">PIL.JpegPresets</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcdImagePlugin">PIL.PcdImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#PIL._imagingcms">PIL._imagingcms</a>
+ &#8226;   <a href="#PIL._imagingmath">PIL._imagingmath</a>
+ &#8226;   <a href="#PIL._imagingtk">PIL._imagingtk</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#PIL._version">PIL._version</a>
+ &#8226;   <a href="#PIL._webp">PIL._webp</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#openpyxl.drawing.image">openpyxl.drawing.image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.BlpImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/BlpImagePlugin.py" type="text/plain"><tt>PIL.BlpImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.BmpImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/BmpImagePlugin.py" type="text/plain"><tt>PIL.BmpImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.BufrStubImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/BufrStubImagePlugin.py" type="text/plain"><tt>PIL.BufrStubImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.CurImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/CurImagePlugin.py" type="text/plain"><tt>PIL.CurImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.DcxImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/DcxImagePlugin.py" type="text/plain"><tt>PIL.DcxImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.DdsImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/DdsImagePlugin.py" type="text/plain"><tt>PIL.DdsImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.EpsImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/EpsImagePlugin.py" type="text/plain"><tt>PIL.EpsImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ExifTags"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ExifTags.py" type="text/plain"><tt>PIL.ExifTags</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#enum">enum</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.FitsImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/FitsImagePlugin.py" type="text/plain"><tt>PIL.FitsImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#math">math</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.FliImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/FliImagePlugin.py" type="text/plain"><tt>PIL.FliImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.FpxImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/FpxImagePlugin.py" type="text/plain"><tt>PIL.FpxImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#olefile">olefile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.FtexImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/FtexImagePlugin.py" type="text/plain"><tt>PIL.FtexImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#struct">struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.GbrImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/GbrImagePlugin.py" type="text/plain"><tt>PIL.GbrImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.GifImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/GifImagePlugin.py" type="text/plain"><tt>PIL.GifImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.GimpGradientFile"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/GimpGradientFile.py" type="text/plain"><tt>PIL.GimpGradientFile</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.GimpPaletteFile"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/GimpPaletteFile.py" type="text/plain"><tt>PIL.GimpPaletteFile</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.GribStubImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/GribStubImagePlugin.py" type="text/plain"><tt>PIL.GribStubImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.Hdf5StubImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/Hdf5StubImagePlugin.py" type="text/plain"><tt>PIL.Hdf5StubImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.IcnsImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/IcnsImagePlugin.py" type="text/plain"><tt>PIL.IcnsImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.IcoImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/IcoImagePlugin.py" type="text/plain"><tt>PIL.IcoImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImImagePlugin.py" type="text/plain"><tt>PIL.ImImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.Image"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/Image.py" type="text/plain"><tt>PIL.Image</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcdImagePlugin">PIL.PcdImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#atexit">atexit</a>
+ &#8226;   <a href="#builtins">builtins</a>
+ &#8226;   <a href="#defusedxml">defusedxml</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#mmap">mmap</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.ImageWin">PIL.ImageWin</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcdImagePlugin">PIL.PcdImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#openpyxl.drawing.image">openpyxl.drawing.image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageChops"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageChops.py" type="text/plain"><tt>PIL.ImageChops</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageCms"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageCms.py" type="text/plain"><tt>PIL.ImageCms</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageWin">PIL.ImageWin</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._imagingcms">PIL._imagingcms</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageColor"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageColor.py" type="text/plain"><tt>PIL.ImageColor</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#colorsys">colorsys</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageFile"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageFile.py" type="text/plain"><tt>PIL.ImageFile</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#mmap">mmap</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcdImagePlugin">PIL.PcdImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageFilter"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageFilter.py" type="text/plain"><tt>PIL.ImageFilter</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageMath"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageMath.py" type="text/plain"><tt>PIL.ImageMath</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._imagingmath">PIL._imagingmath</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#builtins">builtins</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageMode"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageMode.py" type="text/plain"><tt>PIL.ImageMode</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageOps"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageOps.py" type="text/plain"><tt>PIL.ImageOps</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImagePalette"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImagePalette.py" type="text/plain"><tt>PIL.ImagePalette</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#array">array</a>
+ &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageQt"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageQt.py" type="text/plain"><tt>PIL.ImageQt</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageSequence"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageSequence.py" type="text/plain"><tt>PIL.ImageSequence</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageShow"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageShow.py" type="text/plain"><tt>PIL.ImageShow</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageTk"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageTk.py" type="text/plain"><tt>PIL.ImageTk</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._imagingtk">PIL._imagingtk</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImageWin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImageWin.py" type="text/plain"><tt>PIL.ImageWin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.ImtImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/ImtImagePlugin.py" type="text/plain"><tt>PIL.ImtImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.IptcImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/IptcImagePlugin.py" type="text/plain"><tt>PIL.IptcImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.Jpeg2KImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/Jpeg2KImagePlugin.py" type="text/plain"><tt>PIL.Jpeg2KImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.JpegImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/JpegImagePlugin.py" type="text/plain"><tt>PIL.JpegImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.JpegPresets">PIL.JpegPresets</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#array">array</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.JpegPresets"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/JpegPresets.py" type="text/plain"><tt>PIL.JpegPresets</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.McIdasImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/McIdasImagePlugin.py" type="text/plain"><tt>PIL.McIdasImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#struct">struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.MicImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/MicImagePlugin.py" type="text/plain"><tt>PIL.MicImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#olefile">olefile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.MpegImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/MpegImagePlugin.py" type="text/plain"><tt>PIL.MpegImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.MpoImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/MpoImagePlugin.py" type="text/plain"><tt>PIL.MpoImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.MspImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/MspImagePlugin.py" type="text/plain"><tt>PIL.MspImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PaletteFile"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PaletteFile.py" type="text/plain"><tt>PIL.PaletteFile</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PalmImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PalmImagePlugin.py" type="text/plain"><tt>PIL.PalmImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PcdImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PcdImagePlugin.py" type="text/plain"><tt>PIL.PcdImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PcxImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PcxImagePlugin.py" type="text/plain"><tt>PIL.PcxImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PdfImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PdfImagePlugin.py" type="text/plain"><tt>PIL.PdfImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PdfParser"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PdfParser.py" type="text/plain"><tt>PIL.PdfParser</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#calendar">calendar</a>
+ &#8226;   <a href="#codecs">codecs</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#mmap">mmap</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#zlib">zlib</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PixarImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PixarImagePlugin.py" type="text/plain"><tt>PIL.PixarImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PngImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PngImagePlugin.py" type="text/plain"><tt>PIL.PngImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._imaging">PIL._imaging</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#zlib">zlib</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PpmImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PpmImagePlugin.py" type="text/plain"><tt>PIL.PpmImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.PsdImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/PsdImagePlugin.py" type="text/plain"><tt>PIL.PsdImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.QoiImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/QoiImagePlugin.py" type="text/plain"><tt>PIL.QoiImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.SgiImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/SgiImagePlugin.py" type="text/plain"><tt>PIL.SgiImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.SpiderImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/SpiderImagePlugin.py" type="text/plain"><tt>PIL.SpiderImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.SunImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/SunImagePlugin.py" type="text/plain"><tt>PIL.SunImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.TgaImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/TgaImagePlugin.py" type="text/plain"><tt>PIL.TgaImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.TiffImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/TiffImagePlugin.py" type="text/plain"><tt>PIL.TiffImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#numbers">numbers</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.TiffTags"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/TiffTags.py" type="text/plain"><tt>PIL.TiffTags</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.WebPImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/WebPImagePlugin.py" type="text/plain"><tt>PIL.WebPImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._webp">PIL._webp</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.WmfImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/WmfImagePlugin.py" type="text/plain"><tt>PIL.WmfImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.XVThumbImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/XVThumbImagePlugin.py" type="text/plain"><tt>PIL.XVThumbImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.XbmImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/XbmImagePlugin.py" type="text/plain"><tt>PIL.XbmImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.XpmImagePlugin"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/XpmImagePlugin.py" type="text/plain"><tt>PIL.XpmImagePlugin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._binary"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/_binary.py" type="text/plain"><tt>PIL._binary</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#struct">struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._deprecate"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/_deprecate.py" type="text/plain"><tt>PIL._deprecate</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._imaging"></a>
+  <tt>PIL._imaging</tt> <span class="moduletype"><tt>C:\Users\octav\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PIL\_imaging.cp313-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._imagingcms"></a>
+  <tt>PIL._imagingcms</tt> <span class="moduletype"><tt>C:\Users\octav\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PIL\_imagingcms.cp313-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._imagingmath"></a>
+  <tt>PIL._imagingmath</tt> <span class="moduletype"><tt>C:\Users\octav\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PIL\_imagingmath.cp313-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._imagingtk"></a>
+  <tt>PIL._imagingtk</tt> <span class="moduletype"><tt>C:\Users\octav\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PIL\_imagingtk.cp313-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._typing"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/_typing.py" type="text/plain"><tt>PIL._typing</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#numbers">numbers</a>
+ &#8226;   <a href="#numpy.typing">numpy.typing</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._util"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/_util.py" type="text/plain"><tt>PIL._util</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._version"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/_version.py" type="text/plain"><tt>PIL._version</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#__future__">__future__</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL._webp"></a>
+  <tt>PIL._webp</tt> <span class="moduletype"><tt>C:\Users\octav\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PIL\_webp.cp313-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PIL.features"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/PIL/features.py" type="text/plain"><tt>PIL.features</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
 
   </div>
 
@@ -1103,6 +3325,81 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
     <a href="#Levenshtein">Levenshtein</a>
+ &#8226;   <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.CurImagePlugin">PIL.CurImagePlugin</a>
+ &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GbrImagePlugin">PIL.GbrImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageChops">PIL.ImageChops</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.ImageWin">PIL.ImageWin</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegPresets">PIL.JpegPresets</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+ &#8226;   <a href="#PIL.MpegImagePlugin">PIL.MpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcdImagePlugin">PIL.PcdImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PixarImagePlugin">PIL.PixarImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.SunImagePlugin">PIL.SunImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XVThumbImagePlugin">PIL.XVThumbImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#PIL._version">PIL._version</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
  &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_pyrepl.commands">_pyrepl.commands</a>
  &#8226;   <a href="#_pyrepl.completing_reader">_pyrepl.completing_reader</a>
@@ -1493,6 +3790,13 @@ imported by:
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tomllib._parser">tomllib._parser</a>
  &#8226;   <a href="#tomllib._re">tomllib._re</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
 
   </div>
 
@@ -3254,7 +5558,12 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_collections_abc">_collections_abc</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
  &#8226;   <a href="#_pyrepl.input">_pyrepl.input</a>
  &#8226;   <a href="#contextlib">contextlib</a>
@@ -3359,12 +5668,16 @@ imported by:
   <a name="array"></a>
   <tt>array</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
+    <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#openpyxl.styles.cell_style">openpyxl.styles.cell_style</a>
  &#8226;   <a href="#rapidfuzz._common_py">rapidfuzz._common_py</a>
  &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
 
   </div>
 
@@ -4355,7 +6668,8 @@ imported by:
   <a name="atexit"></a>
   <tt>atexit</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#logging">logging</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
@@ -4523,7 +6837,9 @@ imported by:
   <a name="builtins"></a>
   <tt>builtins</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pyrepl.readline">_pyrepl.readline</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#_pyrepl.readline">_pyrepl.readline</a>
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#code">code</a>
  &#8226;   <a href="#codecs">codecs</a>
@@ -4584,6 +6900,17 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="cStringIO"></a>
+  <a target="code" href="" type="text/plain"><tt>cStringIO</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="calendar"></a>
   <a target="code" href="///C:/Program%20Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0/Lib/calendar.py" type="text/plain"><tt>calendar</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -4599,7 +6926,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_strptime">_strptime</a>
+    <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#dateutil.parser._parser">dateutil.parser._parser</a>
  &#8226;   <a href="#dateutil.parser.isoparser">dateutil.parser.isoparser</a>
  &#8226;   <a href="#dateutil.relativedelta">dateutil.relativedelta</a>
@@ -4689,7 +7017,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pickle">_pickle</a>
+    <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.ascii">encodings.ascii</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
@@ -4866,7 +7195,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
+    <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#_pyrepl.input">_pyrepl.input</a>
  &#8226;   <a href="#_pyrepl.unix_eventqueue">_pyrepl.unix_eventqueue</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
@@ -4968,6 +7299,7 @@ imported by:
  &#8226;   <a href="#unittest.case">unittest.case</a>
  &#8226;   <a href="#unittest.util">unittest.util</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
 
   </div>
@@ -4981,6 +7313,17 @@ imported by:
 imported by:
     <a href="#collections">collections</a>
  &#8226;   <a href="#pytz.lazy">pytz.lazy</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="colorsys"></a>
+  <a target="code" href="///C:/Program%20Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0/Lib/colorsys.py" type="text/plain"><tt>colorsys</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imported by:
+    <a href="#PIL.ImageColor">PIL.ImageColor</a>
 
   </div>
 
@@ -5295,7 +7638,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_sre">_sre</a>
+    <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#_sre">_sre</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#dataclasses">dataclasses</a>
@@ -5334,6 +7678,10 @@ imported by:
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.contenttypes">xlsxwriter.contenttypes</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
  &#8226;   <a href="#xml.dom.xmlbuilder">xml.dom.xmlbuilder</a>
  &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
 
@@ -5643,6 +7991,7 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#logging">logging</a>
+ &#8226;   <a href="#openpyxl">openpyxl</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pandas">pandas</a>
 
@@ -5771,6 +8120,11 @@ imported by:
  &#8226;   <a href="#setuptools.warnings">setuptools.warnings</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#tomllib._re">tomllib._re</a>
+ &#8226;   <a href="#xlrd.xldate">xlrd.xldate</a>
+ &#8226;   <a href="#xlsxwriter.core">xlsxwriter.core</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
@@ -6187,6 +8541,8 @@ imported by:
  &#8226;   <a href="#pandas.io.formats.format">pandas.io.formats.format</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.fastjsonschema_validations">setuptools.config._validate_pyproject.fastjsonschema_validations</a>
  &#8226;   <a href="#statistics">statistics</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
@@ -6198,7 +8554,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>defusedxml</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#openpyxl.xml">openpyxl.xml</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#openpyxl.xml">openpyxl.xml</a>
 
   </div>
 
@@ -9348,7 +11705,15 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#ast">ast</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#asyncio.constants">asyncio.constants</a>
  &#8226;   <a href="#asyncio.locks">asyncio.locks</a>
  &#8226;   <a href="#asyncio.runners">asyncio.runners</a>
@@ -9498,6 +11863,7 @@ imports:
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pandas">pandas</a>
+ &#8226;   <a href="#re">re</a>
 
   </div>
   <div class="import">
@@ -9575,8 +11941,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#dateutil.rrule">dateutil.rrule</a>
+    <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#dateutil.rrule">dateutil.rrule</a>
  &#8226;   <a href="#statistics">statistics</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
 
   </div>
 
@@ -9631,7 +12000,14 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.simple_interact">_pyrepl.simple_interact</a>
+    <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#_pyrepl.simple_interact">_pyrepl.simple_interact</a>
  &#8226;   <a href="#_pyrepl.utils">_pyrepl.utils</a>
  &#8226;   <a href="#asyncio.format_helpers">asyncio.format_helpers</a>
  &#8226;   <a href="#asyncio.runners">asyncio.runners</a>
@@ -9652,6 +12028,7 @@ imported by:
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
  &#8226;   <a href="#fuzzywuzzy.utils">fuzzywuzzy.utils</a>
  &#8226;   <a href="#glob">glob</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
@@ -9801,6 +12178,7 @@ imported by:
  &#8226;   <a href="#unittest.signals">unittest.signals</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
 
   </div>
 
@@ -9813,6 +12191,7 @@ imported by:
 imports:
     <a href="#fuzzywuzzy">fuzzywuzzy</a>
  &#8226;   <a href="#fuzzywuzzy.fuzz">fuzzywuzzy.fuzz</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
  &#8226;   <a href="#fuzzywuzzy.utils">fuzzywuzzy.utils</a>
 
   </div>
@@ -9822,8 +12201,10 @@ imported by:
  &#8226;   <a href="#fuzzywuzzy">fuzzywuzzy</a>
  &#8226;   <a href="#fuzzywuzzy.StringMatcher">fuzzywuzzy.StringMatcher</a>
  &#8226;   <a href="#fuzzywuzzy.fuzz">fuzzywuzzy.fuzz</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
  &#8226;   <a href="#fuzzywuzzy.string_processing">fuzzywuzzy.string_processing</a>
  &#8226;   <a href="#fuzzywuzzy.utils">fuzzywuzzy.utils</a>
+ &#8226;   <a href="#mapping_system">mapping_system</a>
 
   </div>
 
@@ -9865,6 +12246,29 @@ imports:
 imported by:
     <a href="#file_analyzer">file_analyzer</a>
  &#8226;   <a href="#fuzzywuzzy">fuzzywuzzy</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="fuzzywuzzy.process"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/fuzzywuzzy/process.py" type="text/plain"><tt>fuzzywuzzy.process</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#fuzzywuzzy">fuzzywuzzy</a>
+ &#8226;   <a href="#fuzzywuzzy.fuzz">fuzzywuzzy.fuzz</a>
+ &#8226;   <a href="#fuzzywuzzy.utils">fuzzywuzzy.utils</a>
+ &#8226;   <a href="#heapq">heapq</a>
+ &#8226;   <a href="#logging">logging</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#fuzzywuzzy">fuzzywuzzy</a>
+ &#8226;   <a href="#mapping_system">mapping_system</a>
 
   </div>
 
@@ -9906,6 +12310,7 @@ imports:
 imported by:
     <a href="#fuzzywuzzy">fuzzywuzzy</a>
  &#8226;   <a href="#fuzzywuzzy.fuzz">fuzzywuzzy.fuzz</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
 
   </div>
 
@@ -10102,7 +12507,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#fileinput">fileinput</a>
+    <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#fileinput">fileinput</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
  &#8226;   <a href="#pandas._testing._io">pandas._testing._io</a>
  &#8226;   <a href="#pandas.io.common">pandas.io.common</a>
@@ -10137,6 +12543,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#uuid">uuid</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
 
   </div>
 
@@ -10157,6 +12564,7 @@ imported by:
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#dateutil.rrule">dateutil.rrule</a>
  &#8226;   <a href="#difflib">difflib</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#rapidfuzz.process_py">rapidfuzz.process_py</a>
@@ -11014,7 +13422,28 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_colorize">_colorize</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#_colorize">_colorize</a>
  &#8226;   <a href="#_compression">_compression</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
@@ -11105,6 +13534,11 @@ imported by:
  &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#uuid">uuid</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.theme">xlsxwriter.theme</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
  &#8226;   <a href="#xml.dom.minidom">xml.dom.minidom</a>
  &#8226;   <a href="#xml.dom.pulldom">xml.dom.pulldom</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
@@ -11140,7 +13574,12 @@ imported by:
   <a name="itertools"></a>
   <tt>itertools</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
+    <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
  &#8226;   <a href="#asyncio.selector_events">asyncio.selector_events</a>
  &#8226;   <a href="#asyncio.tasks">asyncio.tasks</a>
@@ -11546,12 +13985,17 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#asyncio.futures">asyncio.futures</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#asyncio.futures">asyncio.futures</a>
  &#8226;   <a href="#asyncio.log">asyncio.log</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#config_manager">config_manager</a>
  &#8226;   <a href="#data_processor">data_processor</a>
  &#8226;   <a href="#file_analyzer">file_analyzer</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#main.py">main.py</a>
@@ -11619,7 +14063,9 @@ imported by:
   <a target="code" href="///C:/Users/octav/OneDrive/Desktop/GitHub/repos/Moxy-Rates-Template-Transfer/mapping_system.py" type="text/plain"><tt>mapping_system</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#hashlib">hashlib</a>
+    <a href="#fuzzywuzzy">fuzzywuzzy</a>
+ &#8226;   <a href="#fuzzywuzzy.process">fuzzywuzzy.process</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pandas">pandas</a>
@@ -11665,7 +14111,16 @@ imported by:
   <a name="math"></a>
   <tt>math</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pydatetime">_pydatetime</a>
+    <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#_pydatetime">_pydatetime</a>
  &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#asyncio.tasks">asyncio.tasks</a>
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
@@ -11692,6 +14147,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
 
   </div>
 
@@ -11737,11 +14193,15 @@ imported by:
   <a name="mmap"></a>
   <tt>mmap</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#multiprocessing.heap">multiprocessing.heap</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
  &#8226;   <a href="#numpy._core.memmap">numpy._core.memmap</a>
  &#8226;   <a href="#pandas.io.common">pandas.io.common</a>
  &#8226;   <a href="#pandas.io.excel._openpyxl">pandas.io.excel._openpyxl</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
 
   </div>
 
@@ -12693,7 +15153,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
+    <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#fractions">fractions</a>
  &#8226;   <a href="#numpy._core.arrayprint">numpy._core.arrayprint</a>
  &#8226;   <a href="#numpy._core.numeric">numpy._core.numeric</a>
@@ -19451,7 +21913,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#numpy">numpy</a>
+    <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#pandas._typing">pandas._typing</a>
 
   </div>
@@ -19499,6 +21962,18 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="olefile"></a>
+  <a target="code" href="" type="text/plain"><tt>olefile</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PIL.FpxImagePlugin">PIL.FpxImagePlugin</a>
+ &#8226;   <a href="#PIL.MicImagePlugin">PIL.MicImagePlugin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="opcode"></a>
   <a target="code" href="///C:/Program%20Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0/Lib/opcode.py" type="text/plain"><tt>opcode</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -19529,7 +22004,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#openpyxl._constants">openpyxl._constants</a>
+    <a href="#data_processor">data_processor</a>
+ &#8226;   <a href="#openpyxl._constants">openpyxl._constants</a>
  &#8226;   <a href="#openpyxl.cell">openpyxl.cell</a>
  &#8226;   <a href="#openpyxl.cell._writer">openpyxl.cell._writer</a>
  &#8226;   <a href="#openpyxl.chart">openpyxl.chart</a>
@@ -21717,6 +24193,7 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#openpyxl.drawing">openpyxl.drawing</a>
 
@@ -24268,7 +26745,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydatetime">_pydatetime</a>
+    <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#_pydatetime">_pydatetime</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#dateutil.relativedelta">dateutil.relativedelta</a>
@@ -24344,6 +26823,8 @@ imported by:
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
 
   </div>
 
@@ -24370,7 +26851,29 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_aix_support">_aix_support</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.QoiImagePlugin">PIL.QoiImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_colorize">_colorize</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_pyrepl.commands">_pyrepl.commands</a>
@@ -24608,6 +27111,11 @@ imported by:
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#uuid">uuid</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
  &#8226;   <a href="#xml.dom.domreg">xml.dom.domreg</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
@@ -25172,6 +27680,7 @@ imports:
 imported by:
     <a href="#data_processor">data_processor</a>
  &#8226;   <a href="#file_analyzer">file_analyzer</a>
+ &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#mapping_system">mapping_system</a>
  &#8226;   <a href="#pandas">pandas</a>
  &#8226;   <a href="#pandas._config">pandas._config</a>
@@ -35271,6 +37780,7 @@ imports:
  &#8226;   <a href="#pandas.util._decorators">pandas.util._decorators</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.xldate">xlrd.xldate</a>
 
   </div>
   <div class="import">
@@ -37866,6 +40376,7 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.dist">setuptools._distutils.dist</a>
  &#8226;   <a href="#unittest.case">unittest.case</a>
  &#8226;   <a href="#unittest.mock">unittest.mock</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
 
   </div>
 
@@ -38291,7 +40802,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#email.generator">email.generator</a>
+    <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#secrets">secrets</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
@@ -39331,7 +41843,18 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
+    <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageColor">PIL.ImageColor</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImtImagePlugin">PIL.ImtImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#_pyrepl.completing_reader">_pyrepl.completing_reader</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
@@ -39363,6 +41886,7 @@ imported by:
  &#8226;   <a href="#email.quoprimime">email.quoprimime</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#encodings.idna">encodings.idna</a>
+ &#8226;   <a href="#file_analyzer">file_analyzer</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#fractions">fractions</a>
  &#8226;   <a href="#ftplib">ftplib</a>
@@ -39537,6 +42061,12 @@ imported by:
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
  &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
@@ -44148,7 +46678,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pdb">pdb</a>
+    <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
 
@@ -44181,7 +46712,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#argparse">argparse</a>
+    <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
@@ -44206,6 +46739,7 @@ imported by:
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#uuid">uuid</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -44669,6 +47203,7 @@ imported by:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#tarfile">tarfile</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
 
@@ -44764,7 +47299,23 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.FtexImagePlugin">PIL.FtexImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.McIdasImagePlugin">PIL.McIdasImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
  &#8226;   <a href="#base64">base64</a>
  &#8226;   <a href="#ctypes">ctypes</a>
@@ -44798,6 +47349,13 @@ imported by:
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tarfile">tarfile</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipimport">zipimport</a>
 
@@ -44834,7 +47392,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_aix_support">_aix_support</a>
+    <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
  &#8226;   <a href="#asyncio.base_subprocess">asyncio.base_subprocess</a>
@@ -44845,6 +47407,7 @@ imported by:
  &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#numpy.f2py">numpy.f2py</a>
@@ -44879,7 +47442,20 @@ imported by:
   <a name="sys"></a>
   <tt>sys</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_aix_support">_aix_support</a>
+    <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_colorize">_colorize</a>
  &#8226;   <a href="#_compression">_compression</a>
@@ -45145,6 +47721,10 @@ imported by:
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
  &#8226;   <a href="#xml.dom.domreg">xml.dom.domreg</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
@@ -45273,7 +47853,10 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.pager">_pyrepl.pager</a>
+    <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#asyncio.windows_utils">asyncio.windows_utils</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#importlib.resources._common">importlib.resources._common</a>
@@ -45296,6 +47879,8 @@ imported by:
  &#8226;   <a href="#setuptools.installer">setuptools.installer</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.response">urllib.response</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
 
   </div>
 
@@ -45459,7 +48044,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_datetime">_datetime</a>
+    <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#_datetime">_datetime</a>
  &#8226;   <a href="#_pydatetime">_pydatetime</a>
  &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
@@ -45506,6 +48093,8 @@ imported by:
  &#8226;   <a href="#unittest.runner">unittest.runner</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#uuid">uuid</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipimport">zipimport</a>
@@ -45654,7 +48243,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#tkinter.filedialog">tkinter.filedialog</a>
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#tkinter.filedialog">tkinter.filedialog</a>
 
   </div>
 
@@ -45955,7 +48545,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#asyncio.coroutines">asyncio.coroutines</a>
  &#8226;   <a href="#asyncio.futures">asyncio.futures</a>
@@ -46063,7 +48657,56 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
+    <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
+ &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.BufrStubImagePlugin">PIL.BufrStubImagePlugin</a>
+ &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
+ &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
+ &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
+ &#8226;   <a href="#PIL.GribStubImagePlugin">PIL.GribStubImagePlugin</a>
+ &#8226;   <a href="#PIL.Hdf5StubImagePlugin">PIL.Hdf5StubImagePlugin</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+ &#8226;   <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.ImImagePlugin">PIL.ImImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.ImageCms">PIL.ImageCms</a>
+ &#8226;   <a href="#PIL.ImageFile">PIL.ImageFile</a>
+ &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
+ &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
+ &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
+ &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
+ &#8226;   <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#PIL.ImageQt">PIL.ImageQt</a>
+ &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
+ &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.IptcImagePlugin">PIL.IptcImagePlugin</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.MpoImagePlugin">PIL.MpoImagePlugin</a>
+ &#8226;   <a href="#PIL.MspImagePlugin">PIL.MspImagePlugin</a>
+ &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
+ &#8226;   <a href="#PIL.PalmImagePlugin">PIL.PalmImagePlugin</a>
+ &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
+ &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
+ &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PIL.SgiImagePlugin">PIL.SgiImagePlugin</a>
+ &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffTags">PIL.TiffTags</a>
+ &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PIL.WmfImagePlugin">PIL.WmfImagePlugin</a>
+ &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
+ &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PIL._util">PIL._util</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#_pyrepl.readline">_pyrepl.readline</a>
@@ -46427,7 +49070,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pandas._typing">pandas._typing</a>
+    <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#pandas._typing">pandas._typing</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
  &#8226;   <a href="#setuptools._distutils.cmd">setuptools._distutils.cmd</a>
  &#8226;   <a href="#setuptools._distutils.command.bdist">setuptools._distutils.command.bdist</a>
@@ -46991,7 +49635,15 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_collections_abc">_collections_abc</a>
+    <a href="#PIL.IcoImagePlugin">PIL.IcoImagePlugin</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PIL.TgaImagePlugin">PIL.TgaImagePlugin</a>
+ &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
+ &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_pydatetime">_pydatetime</a>
  &#8226;   <a href="#_pyrepl.readline">_pyrepl.readline</a>
@@ -47237,6 +49889,16 @@ imported by:
  &#8226;   <a href="#unittest.runner">unittest.runner</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.chart_bar">xlsxwriter.chart_bar</a>
+ &#8226;   <a href="#xlsxwriter.chart_doughnut">xlsxwriter.chart_doughnut</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+ &#8226;   <a href="#xlsxwriter.chart_scatter">xlsxwriter.chart_scatter</a>
+ &#8226;   <a href="#xlsxwriter.format">xlsxwriter.format</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
@@ -47368,11 +50030,242 @@ imported by:
 
 <div class="node">
   <a name="xlrd"></a>
-  <a target="code" href="" type="text/plain"><tt>xlrd</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/__init__.py" type="text/plain"><tt>xlrd</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#pprint">pprint</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.info">xlrd.info</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+ &#8226;   <a href="#xlrd.xldate">xlrd.xldate</a>
+ &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+  <div class="import">
 imported by:
     <a href="#pandas.io.excel._base">pandas.io.excel._base</a>
  &#8226;   <a href="#pandas.io.excel._xlrd">pandas.io.excel._xlrd</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.info">xlrd.info</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+ &#8226;   <a href="#xlrd.xldate">xlrd.xldate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.biffh"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/biffh.py" type="text/plain"><tt>xlrd.biffh</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.book"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/book.py" type="text/plain"><tt>xlrd.book</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#mmap">mmap</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.compdoc"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/compdoc.py" type="text/plain"><tt>xlrd.compdoc</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#array">array</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.formatting"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/formatting.py" type="text/plain"><tt>xlrd.formatting</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.formula"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/formula.py" type="text/plain"><tt>xlrd.formula</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.info"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/info.py" type="text/plain"><tt>xlrd.info</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlrd">xlrd</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.sheet"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/sheet.py" type="text/plain"><tt>xlrd.sheet</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#array">array</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.timemachine">xlrd.timemachine</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.timemachine"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/timemachine.py" type="text/plain"><tt>xlrd.timemachine</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#cStringIO">cStringIO</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlrd.biffh">xlrd.biffh</a>
+ &#8226;   <a href="#xlrd.book">xlrd.book</a>
+ &#8226;   <a href="#xlrd.compdoc">xlrd.compdoc</a>
+ &#8226;   <a href="#xlrd.formatting">xlrd.formatting</a>
+ &#8226;   <a href="#xlrd.formula">xlrd.formula</a>
+ &#8226;   <a href="#xlrd.sheet">xlrd.sheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlrd.xldate"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlrd/xldate.py" type="text/plain"><tt>xlrd.xldate</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#datetime">datetime</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#pandas.io.excel._xlrd">pandas.io.excel._xlrd</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
 
   </div>
 
@@ -47380,10 +50273,821 @@ imported by:
 
 <div class="node">
   <a name="xlsxwriter"></a>
-  <a target="code" href="" type="text/plain"><tt>xlsxwriter</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/__init__.py" type="text/plain"><tt>xlsxwriter</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
 imported by:
-    <a href="#pandas.io.excel._xlsxwriter">pandas.io.excel._xlsxwriter</a>
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#pandas.io.excel._xlsxwriter">pandas.io.excel._xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.app">xlsxwriter.app</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.chart_area">xlsxwriter.chart_area</a>
+ &#8226;   <a href="#xlsxwriter.chart_bar">xlsxwriter.chart_bar</a>
+ &#8226;   <a href="#xlsxwriter.chart_column">xlsxwriter.chart_column</a>
+ &#8226;   <a href="#xlsxwriter.chart_doughnut">xlsxwriter.chart_doughnut</a>
+ &#8226;   <a href="#xlsxwriter.chart_line">xlsxwriter.chart_line</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+ &#8226;   <a href="#xlsxwriter.chart_radar">xlsxwriter.chart_radar</a>
+ &#8226;   <a href="#xlsxwriter.chart_scatter">xlsxwriter.chart_scatter</a>
+ &#8226;   <a href="#xlsxwriter.chart_stock">xlsxwriter.chart_stock</a>
+ &#8226;   <a href="#xlsxwriter.chartsheet">xlsxwriter.chartsheet</a>
+ &#8226;   <a href="#xlsxwriter.comments">xlsxwriter.comments</a>
+ &#8226;   <a href="#xlsxwriter.contenttypes">xlsxwriter.contenttypes</a>
+ &#8226;   <a href="#xlsxwriter.core">xlsxwriter.core</a>
+ &#8226;   <a href="#xlsxwriter.custom">xlsxwriter.custom</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.exceptions">xlsxwriter.exceptions</a>
+ &#8226;   <a href="#xlsxwriter.feature_property_bag">xlsxwriter.feature_property_bag</a>
+ &#8226;   <a href="#xlsxwriter.format">xlsxwriter.format</a>
+ &#8226;   <a href="#xlsxwriter.metadata">xlsxwriter.metadata</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.relationships">xlsxwriter.relationships</a>
+ &#8226;   <a href="#xlsxwriter.rich_value">xlsxwriter.rich_value</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_rel">xlsxwriter.rich_value_rel</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_structure">xlsxwriter.rich_value_structure</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_types">xlsxwriter.rich_value_types</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
+ &#8226;   <a href="#xlsxwriter.sharedstrings">xlsxwriter.sharedstrings</a>
+ &#8226;   <a href="#xlsxwriter.styles">xlsxwriter.styles</a>
+ &#8226;   <a href="#xlsxwriter.table">xlsxwriter.table</a>
+ &#8226;   <a href="#xlsxwriter.theme">xlsxwriter.theme</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.vml">xlsxwriter.vml</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.app"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/app.py" type="text/plain"><tt>xlsxwriter.app</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart.py" type="text/plain"><tt>xlsxwriter.chart</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#copy">copy</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart_area">xlsxwriter.chart_area</a>
+ &#8226;   <a href="#xlsxwriter.chart_bar">xlsxwriter.chart_bar</a>
+ &#8226;   <a href="#xlsxwriter.chart_column">xlsxwriter.chart_column</a>
+ &#8226;   <a href="#xlsxwriter.chart_line">xlsxwriter.chart_line</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+ &#8226;   <a href="#xlsxwriter.chart_radar">xlsxwriter.chart_radar</a>
+ &#8226;   <a href="#xlsxwriter.chart_scatter">xlsxwriter.chart_scatter</a>
+ &#8226;   <a href="#xlsxwriter.chart_stock">xlsxwriter.chart_stock</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_area"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_area.py" type="text/plain"><tt>xlsxwriter.chart_area</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_bar"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_bar.py" type="text/plain"><tt>xlsxwriter.chart_bar</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_column"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_column.py" type="text/plain"><tt>xlsxwriter.chart_column</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_doughnut"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_doughnut.py" type="text/plain"><tt>xlsxwriter.chart_doughnut</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_line"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_line.py" type="text/plain"><tt>xlsxwriter.chart_line</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_pie"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_pie.py" type="text/plain"><tt>xlsxwriter.chart_pie</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart_doughnut">xlsxwriter.chart_doughnut</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_radar"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_radar.py" type="text/plain"><tt>xlsxwriter.chart_radar</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_scatter"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_scatter.py" type="text/plain"><tt>xlsxwriter.chart_scatter</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chart_stock"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chart_stock.py" type="text/plain"><tt>xlsxwriter.chart_stock</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.chartsheet"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/chartsheet.py" type="text/plain"><tt>xlsxwriter.chartsheet</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.comments"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/comments.py" type="text/plain"><tt>xlsxwriter.comments</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.contenttypes"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/contenttypes.py" type="text/plain"><tt>xlsxwriter.contenttypes</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#copy">copy</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.core"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/core.py" type="text/plain"><tt>xlsxwriter.core</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#datetime">datetime</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.custom"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/custom.py" type="text/plain"><tt>xlsxwriter.custom</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.drawing"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/drawing.py" type="text/plain"><tt>xlsxwriter.drawing</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.chartsheet">xlsxwriter.chartsheet</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.exceptions"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/exceptions.py" type="text/plain"><tt>xlsxwriter.exceptions</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.feature_property_bag"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/feature_property_bag.py" type="text/plain"><tt>xlsxwriter.feature_property_bag</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.format"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/format.py" type="text/plain"><tt>xlsxwriter.format</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.metadata"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/metadata.py" type="text/plain"><tt>xlsxwriter.metadata</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.packager"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/packager.py" type="text/plain"><tt>xlsxwriter.packager</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.app">xlsxwriter.app</a>
+ &#8226;   <a href="#xlsxwriter.comments">xlsxwriter.comments</a>
+ &#8226;   <a href="#xlsxwriter.contenttypes">xlsxwriter.contenttypes</a>
+ &#8226;   <a href="#xlsxwriter.core">xlsxwriter.core</a>
+ &#8226;   <a href="#xlsxwriter.custom">xlsxwriter.custom</a>
+ &#8226;   <a href="#xlsxwriter.exceptions">xlsxwriter.exceptions</a>
+ &#8226;   <a href="#xlsxwriter.feature_property_bag">xlsxwriter.feature_property_bag</a>
+ &#8226;   <a href="#xlsxwriter.metadata">xlsxwriter.metadata</a>
+ &#8226;   <a href="#xlsxwriter.relationships">xlsxwriter.relationships</a>
+ &#8226;   <a href="#xlsxwriter.rich_value">xlsxwriter.rich_value</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_rel">xlsxwriter.rich_value_rel</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_structure">xlsxwriter.rich_value_structure</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_types">xlsxwriter.rich_value_types</a>
+ &#8226;   <a href="#xlsxwriter.sharedstrings">xlsxwriter.sharedstrings</a>
+ &#8226;   <a href="#xlsxwriter.styles">xlsxwriter.styles</a>
+ &#8226;   <a href="#xlsxwriter.table">xlsxwriter.table</a>
+ &#8226;   <a href="#xlsxwriter.theme">xlsxwriter.theme</a>
+ &#8226;   <a href="#xlsxwriter.vml">xlsxwriter.vml</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.relationships"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/relationships.py" type="text/plain"><tt>xlsxwriter.relationships</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.rich_value"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/rich_value.py" type="text/plain"><tt>xlsxwriter.rich_value</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.rich_value_rel"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/rich_value_rel.py" type="text/plain"><tt>xlsxwriter.rich_value_rel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.rich_value_structure"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/rich_value_structure.py" type="text/plain"><tt>xlsxwriter.rich_value_structure</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.rich_value_types"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/rich_value_types.py" type="text/plain"><tt>xlsxwriter.rich_value_types</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.shape"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/shape.py" type="text/plain"><tt>xlsxwriter.shape</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#copy">copy</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.sharedstrings"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/sharedstrings.py" type="text/plain"><tt>xlsxwriter.sharedstrings</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.styles"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/styles.py" type="text/plain"><tt>xlsxwriter.styles</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.table"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/table.py" type="text/plain"><tt>xlsxwriter.table</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.theme"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/theme.py" type="text/plain"><tt>xlsxwriter.theme</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#io">io</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.utility"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/utility.py" type="text/plain"><tt>xlsxwriter.utility</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#datetime">datetime</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.exceptions">xlsxwriter.exceptions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.comments">xlsxwriter.comments</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.sharedstrings">xlsxwriter.sharedstrings</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.vml"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/vml.py" type="text/plain"><tt>xlsxwriter.vml</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.workbook"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/workbook.py" type="text/plain"><tt>xlsxwriter.workbook</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#datetime">datetime</a>
+ &#8226;   <a href="#decimal">decimal</a>
+ &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chart_area">xlsxwriter.chart_area</a>
+ &#8226;   <a href="#xlsxwriter.chart_bar">xlsxwriter.chart_bar</a>
+ &#8226;   <a href="#xlsxwriter.chart_column">xlsxwriter.chart_column</a>
+ &#8226;   <a href="#xlsxwriter.chart_doughnut">xlsxwriter.chart_doughnut</a>
+ &#8226;   <a href="#xlsxwriter.chart_line">xlsxwriter.chart_line</a>
+ &#8226;   <a href="#xlsxwriter.chart_pie">xlsxwriter.chart_pie</a>
+ &#8226;   <a href="#xlsxwriter.chart_radar">xlsxwriter.chart_radar</a>
+ &#8226;   <a href="#xlsxwriter.chart_scatter">xlsxwriter.chart_scatter</a>
+ &#8226;   <a href="#xlsxwriter.chart_stock">xlsxwriter.chart_stock</a>
+ &#8226;   <a href="#xlsxwriter.chartsheet">xlsxwriter.chartsheet</a>
+ &#8226;   <a href="#xlsxwriter.exceptions">xlsxwriter.exceptions</a>
+ &#8226;   <a href="#xlsxwriter.format">xlsxwriter.format</a>
+ &#8226;   <a href="#xlsxwriter.packager">xlsxwriter.packager</a>
+ &#8226;   <a href="#xlsxwriter.sharedstrings">xlsxwriter.sharedstrings</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+ &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter">xlsxwriter</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.worksheet"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/worksheet.py" type="text/plain"><tt>xlsxwriter.worksheet</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#decimal">decimal</a>
+ &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.exceptions">xlsxwriter.exceptions</a>
+ &#8226;   <a href="#xlsxwriter.format">xlsxwriter.format</a>
+ &#8226;   <a href="#xlsxwriter.shape">xlsxwriter.shape</a>
+ &#8226;   <a href="#xlsxwriter.utility">xlsxwriter.utility</a>
+ &#8226;   <a href="#xlsxwriter.xmlwriter">xlsxwriter.xmlwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.chartsheet">xlsxwriter.chartsheet</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xlsxwriter.xmlwriter"></a>
+  <a target="code" href="///C:/Users/octav/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/xlsxwriter/xmlwriter.py" type="text/plain"><tt>xlsxwriter.xmlwriter</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#io">io</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#xlsxwriter">xlsxwriter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xlsxwriter">xlsxwriter</a>
+ &#8226;   <a href="#xlsxwriter.app">xlsxwriter.app</a>
+ &#8226;   <a href="#xlsxwriter.chart">xlsxwriter.chart</a>
+ &#8226;   <a href="#xlsxwriter.comments">xlsxwriter.comments</a>
+ &#8226;   <a href="#xlsxwriter.contenttypes">xlsxwriter.contenttypes</a>
+ &#8226;   <a href="#xlsxwriter.core">xlsxwriter.core</a>
+ &#8226;   <a href="#xlsxwriter.custom">xlsxwriter.custom</a>
+ &#8226;   <a href="#xlsxwriter.drawing">xlsxwriter.drawing</a>
+ &#8226;   <a href="#xlsxwriter.feature_property_bag">xlsxwriter.feature_property_bag</a>
+ &#8226;   <a href="#xlsxwriter.format">xlsxwriter.format</a>
+ &#8226;   <a href="#xlsxwriter.metadata">xlsxwriter.metadata</a>
+ &#8226;   <a href="#xlsxwriter.relationships">xlsxwriter.relationships</a>
+ &#8226;   <a href="#xlsxwriter.rich_value">xlsxwriter.rich_value</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_rel">xlsxwriter.rich_value_rel</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_structure">xlsxwriter.rich_value_structure</a>
+ &#8226;   <a href="#xlsxwriter.rich_value_types">xlsxwriter.rich_value_types</a>
+ &#8226;   <a href="#xlsxwriter.sharedstrings">xlsxwriter.sharedstrings</a>
+ &#8226;   <a href="#xlsxwriter.styles">xlsxwriter.styles</a>
+ &#8226;   <a href="#xlsxwriter.table">xlsxwriter.table</a>
+ &#8226;   <a href="#xlsxwriter.vml">xlsxwriter.vml</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
+ &#8226;   <a href="#xlsxwriter.worksheet">xlsxwriter.worksheet</a>
 
   </div>
 
@@ -47665,7 +51369,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_elementtree">_elementtree</a>
+    <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#_elementtree">_elementtree</a>
  &#8226;   <a href="#et_xmlfile.incremental_tree">et_xmlfile.incremental_tree</a>
  &#8226;   <a href="#et_xmlfile.xmlfile">et_xmlfile.xmlfile</a>
  &#8226;   <a href="#openpyxl.xml.functions">openpyxl.xml.functions</a>
@@ -47978,6 +51683,8 @@ imported by:
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#xlrd">xlrd</a>
+ &#8226;   <a href="#xlsxwriter.workbook">xlsxwriter.workbook</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
 
   </div>
@@ -48075,7 +51782,9 @@ imported by:
   <a name="zlib"></a>
   <tt>zlib</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
+    <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
  &#8226;   <a href="#shutil">shutil</a>
