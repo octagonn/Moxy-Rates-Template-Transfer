@@ -1,0 +1,40 @@
+# Project specific
+data/
+dist/
+build/
+*.spec
+logs/
+output/
+app_icon.ico
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.env
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo 
